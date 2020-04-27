@@ -15,9 +15,6 @@ import java.io.IOException;
 @Slf4j
 public class BaseCallBack implements Callback {
     private String clientKey;
-    public BaseCallBack(String clientKey){
-        this.clientKey = clientKey;
-    }
 
     @Override
     public void onFailure(@NotNull Call call, @NotNull IOException e) {
