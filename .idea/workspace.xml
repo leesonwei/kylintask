@@ -2,48 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="139f0466-82ac-4d9e-835e-6959676f8b7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db/KylinTask.mv.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/commons/ResponseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/commons/ServerResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/config/ScheduleConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/ExceptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/dao/TaskMapper" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/ScheduleTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/exception/KylinException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/exception/TaskException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/job/BuildCubeJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/impl/TaskServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2.0.1__Alter_table_kylintask.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Alter_table_kylintask.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/quartzschema/quartzschema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/quartz.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/commons/ScheduleJobUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/dto/TaskDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/listener/KylinJobListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/KylinTask.lock.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/KylinTask.lock.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/KylinTask.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/KylinTask.trace.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kylintask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kylintask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/KylintaskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/KylintaskApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/commons/KylinTimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/commons/KylinTimeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/JobController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/KylinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/KylinController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/dao/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/dao/TaskDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/dto/CubeDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/Cube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/Cube.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/KylinError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/dto/KylinError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/KylinInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/dto/KylinInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/KylinJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/KylinJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/BaseCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/BaseCallBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/BuildCubeCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/BuildCubeCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/HttpClientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/HttpClientFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/KylinClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/KylinClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/SimpleKylinClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/SimpleKylinClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/JobService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/ScheduleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/KylinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/KylinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/job/BuildCubeJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/job/BuildCubeJob.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/impl/KylinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/impl/KylinServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/impl/TaskServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,10 +139,11 @@
       <screen x="0" y="0" width="1536" height="920" />
     </state>
     <state x="381" y="269" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588057110510" />
-    <state x="574" y="169" key="#com.intellij.ide.util.MemberChooser" timestamp="1588053319266">
-      <screen x="0" y="0" width="1536" height="920" />
+    <state x="478" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1588085911285">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="574" y="169" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588053319266" />
+    <state x="478" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1588085911285" />
     <state x="118" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588053850504">
       <screen x="0" y="0" width="1536" height="920" />
     </state>

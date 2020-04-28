@@ -24,4 +24,5 @@ public class Task {
     private Timestamp taskEnd;
     private String status;
     private boolean isDone;
+    private String description;
 }

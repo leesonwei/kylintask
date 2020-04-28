@@ -6,6 +6,7 @@ import org.quartz.JobExecutionException;
 
 public class BuildCubeJob implements Job {
 
+
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
 
