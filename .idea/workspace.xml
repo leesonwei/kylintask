@@ -2,13 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="139f0466-82ac-4d9e-835e-6959676f8b7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db/KylinTask.lock.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/KylinTask.trace.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Add_table_kylintask.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/KylinTask.mv.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/commons/ResponseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/commons/ServerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/config/ScheduleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/ExceptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/dao/TaskMapper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/ScheduleTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/exception/KylinException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/exception/TaskException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/job/BuildCubeJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/impl/TaskServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2.0.1__Alter_table_kylintask.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Alter_table_kylintask.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/quartzschema/quartzschema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/quartz.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/KylinTask.lock.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/KylinTask.lock.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/KylinTask.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/KylinTask.trace.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kylintask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kylintask.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/KylintaskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/KylintaskApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/commons/KylinTimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/commons/KylinTimeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/JobController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/KylinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/KylinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/dao/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/dao/TaskDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/dto/CubeDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/Cube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/Cube.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/KylinError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/dto/KylinError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/KylinInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/dto/KylinInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/KylinJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/entity/KylinJob.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/BaseCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/BaseCallBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/BuildCubeCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/BuildCubeCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/HttpClientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/HttpClientFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/KylinClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/KylinClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/SimpleKylinClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient/SimpleKylinClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/JobService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/ScheduleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/KylinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/KylinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/impl/KylinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/service/impl/KylinServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,12 +50,26 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -46,7 +94,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/delta/report/kylintask/httpclient" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/db/migration" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -57,9 +105,13 @@
       <recent name="com.delta.report.kylintask.entity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.delta.report.kylintask.exception" />
+      <recent name="com.delta.report.kylintask.entity" />
       <recent name="com.delta.report.kylintask.commons" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\5.projects\1.inject idea\kylintask\src\main\resources\db\migration" />
+      <recent name="E:\5.projects\1.inject idea\kylintask\src\main\resources\db" />
       <recent name="E:\5.projects\1.inject idea\kylintask\src\main\java\com\delta\report\kylintask\httpclient" />
     </key>
   </component>
@@ -106,10 +158,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="169" key="#com.intellij.ide.util.MemberChooser" timestamp="1587978276706">
+    <state x="722" y="122" key="#Inspections" timestamp="1588060621005">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state x="574" y="169" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587978276706" />
+    <state x="722" y="122" key="#Inspections/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588060621005" />
+    <state x="361" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588032932889">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="361" y="122" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588032932889" />
+    <state x="381" y="269" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588057110510">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="381" y="269" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588057110510" />
+    <state x="574" y="169" key="#com.intellij.ide.util.MemberChooser" timestamp="1588053319266">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="574" y="169" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588053319266" />
+    <state x="118" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588053850504">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="118" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588053850504" />
+    <state x="499" y="210" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588053914197">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="499" y="210" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588053914197" />
     <state x="258" y="0" key="CommitChangelistDialog2" timestamp="1587903867138">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -118,65 +190,65 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="84" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587903836334" />
-    <state width="1237" height="412" key="GridCell.Tab.0.bottom" timestamp="1587997250255">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1495" height="535" key="GridCell.Tab.0.bottom" timestamp="1588062154871">
+      <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1495" height="339" key="GridCell.Tab.0.bottom/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587975649347" />
+    <state width="1495" height="535" key="GridCell.Tab.0.bottom/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588062154871" />
     <state width="1237" height="412" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587997250255" />
-    <state width="1237" height="412" key="GridCell.Tab.0.center" timestamp="1587997250255">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1495" height="535" key="GridCell.Tab.0.center" timestamp="1588062154871">
+      <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1495" height="339" key="GridCell.Tab.0.center/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587975649347" />
+    <state width="1495" height="535" key="GridCell.Tab.0.center/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588062154871" />
     <state width="1237" height="412" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587997250255" />
-    <state width="1237" height="412" key="GridCell.Tab.0.left" timestamp="1587997250255">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1495" height="535" key="GridCell.Tab.0.left" timestamp="1588062154871">
+      <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1495" height="339" key="GridCell.Tab.0.left/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587975649347" />
+    <state width="1495" height="535" key="GridCell.Tab.0.left/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588062154871" />
     <state width="1237" height="412" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587997250255" />
-    <state width="1237" height="412" key="GridCell.Tab.0.right" timestamp="1587997250255">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1495" height="535" key="GridCell.Tab.0.right" timestamp="1588062154871">
+      <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1495" height="339" key="GridCell.Tab.0.right/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587975649347" />
+    <state width="1495" height="535" key="GridCell.Tab.0.right/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588062154871" />
     <state width="1237" height="412" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587997250255" />
-    <state width="1237" height="412" key="GridCell.Tab.1.bottom" timestamp="1587997250255">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1495" height="535" key="GridCell.Tab.1.bottom" timestamp="1588062154872">
+      <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1495" height="339" key="GridCell.Tab.1.bottom/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587975649347" />
+    <state width="1495" height="535" key="GridCell.Tab.1.bottom/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588062154872" />
     <state width="1237" height="412" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587997250255" />
-    <state width="1237" height="412" key="GridCell.Tab.1.center" timestamp="1587997250255">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1495" height="535" key="GridCell.Tab.1.center" timestamp="1588062154872">
+      <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1495" height="339" key="GridCell.Tab.1.center/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587975649347" />
+    <state width="1495" height="535" key="GridCell.Tab.1.center/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588062154872" />
     <state width="1237" height="412" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1587997250255" />
-    <state width="1237" height="412" key="GridCell.Tab.1.left" timestamp="1587997250255">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1495" height="535" key="GridCell.Tab.1.left" timestamp="1588062154872">
+      <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1495" height="339" key="GridCell.Tab.1.left/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587975649347" />
+    <state width="1495" height="535" key="GridCell.Tab.1.left/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588062154872" />
     <state width="1237" height="412" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1587997250255" />
-    <state width="1237" height="412" key="GridCell.Tab.1.right" timestamp="1587997250255">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1495" height="535" key="GridCell.Tab.1.right" timestamp="1588062154872">
+      <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1495" height="339" key="GridCell.Tab.1.right/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587975649347" />
+    <state width="1495" height="535" key="GridCell.Tab.1.right/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588062154872" />
     <state width="1237" height="412" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1587997250255" />
-    <state width="1237" height="412" key="GridCell.Tab.2.bottom" timestamp="1587997250255">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1495" height="535" key="GridCell.Tab.2.bottom" timestamp="1588062154872">
+      <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1495" height="339" key="GridCell.Tab.2.bottom/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587975649348" />
+    <state width="1495" height="535" key="GridCell.Tab.2.bottom/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588062154872" />
     <state width="1237" height="412" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587997250255" />
-    <state width="1237" height="412" key="GridCell.Tab.2.center" timestamp="1587997250255">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1495" height="535" key="GridCell.Tab.2.center" timestamp="1588062154872">
+      <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1495" height="339" key="GridCell.Tab.2.center/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587975649347" />
+    <state width="1495" height="535" key="GridCell.Tab.2.center/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588062154872" />
     <state width="1237" height="412" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1587997250255" />
-    <state width="1237" height="412" key="GridCell.Tab.2.left" timestamp="1587997250255">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1495" height="535" key="GridCell.Tab.2.left" timestamp="1588062154872">
+      <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1495" height="339" key="GridCell.Tab.2.left/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587975649347" />
+    <state width="1495" height="535" key="GridCell.Tab.2.left/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588062154872" />
     <state width="1237" height="412" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1587997250255" />
-    <state width="1237" height="412" key="GridCell.Tab.2.right" timestamp="1587997250255">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1495" height="535" key="GridCell.Tab.2.right" timestamp="1588062154872">
+      <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state width="1495" height="339" key="GridCell.Tab.2.right/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587975649348" />
+    <state width="1495" height="535" key="GridCell.Tab.2.right/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588062154872" />
     <state width="1237" height="412" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1587997250255" />
     <state x="173" y="0" key="SettingsEditor" timestamp="1587979388064">
       <screen x="0" y="0" width="1536" height="920" />
@@ -196,5 +268,9 @@
     </state>
     <state x="404" y="227" key="com.intellij.ide.util.TipDialog/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1587945985664" />
     <state x="337" y="168" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1587902789212" />
+    <state x="431" y="195" width="672" height="678" key="search.everywhere.popup" timestamp="1588045580746">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="431" y="195" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.824/0.0.1536.920@0.0.1536.920" timestamp="1588045580746" />
   </component>
 </project>

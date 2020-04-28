@@ -1,7 +1,8 @@
 package com.delta.report.kylintask.httpclient;
 
 import com.alibaba.fastjson.JSONObject;
-import com.delta.report.kylintask.entity.KylinError;
+import com.delta.report.kylintask.dto.KylinError;
+import com.delta.report.kylintask.exception.KylinException;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.Call;
@@ -26,7 +27,7 @@ public class BaseCallBack implements Callback {
         if (!response.isSuccessful()) {
             KylinError kylinError = JSONObject.parseObject(response.body().string(), KylinError.class);
             log.error(kylinError.toString());
-            throw new RuntimeException("request failed.");
+            throw new KylinException(kylinError);
         }
     }
 }

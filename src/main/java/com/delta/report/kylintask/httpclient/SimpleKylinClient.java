@@ -3,15 +3,16 @@ package com.delta.report.kylintask.httpclient;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.delta.report.kylintask.commons.Http;
-import com.delta.report.kylintask.dto.CubeDto;
+import com.delta.report.kylintask.commons.KylinTimeUtil;
 import com.delta.report.kylintask.entity.Cube;
-import com.delta.report.kylintask.entity.KylinInfo;
+import com.delta.report.kylintask.dto.KylinInfo;
 import com.delta.report.kylintask.entity.KylinJob;
 import com.delta.report.kylintask.entity.Project;
+import com.delta.report.kylintask.entity.Task;
+import com.delta.report.kylintask.exception.KylinException;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.*;
-import okhttp3.internal.http2.Header;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
@@ -45,7 +46,7 @@ public class SimpleKylinClient implements KylinClient {
         if (requestSync.contains("userDetails")) {
             return String.valueOf(kylinInfo.hashCode());
         } else {
-            throw new RuntimeException("can't connect to kylin server");
+            throw new KylinException("can't connect to kylin server");
         }
     }
 
@@ -76,15 +77,18 @@ public class SimpleKylinClient implements KylinClient {
     }
 
     @Override
-    public void buildCube(CubeDto cube, Callback callback) {
+    public void buildCube(Cube cube, Task task, Callback callback) {
         String url = getUrl(cube.isStreaming() ? streamingbuild : build);
+        task.setStartTime(KylinTimeUtil.getTimeStamp(task.getStartTime()));
         RequestBody requestBody = getRequestBody(cube);
-        doRequestAync(url, requestBody, Http.PUT, new BuildCubeCallback());
+        BuildCubeCallback buildCubeCallback = new BuildCubeCallback();
+        buildCubeCallback.setTask(task);
+        doRequestAync(url, requestBody, Http.PUT, buildCubeCallback);
     }
 
     @Override
     public void resumeJob(KylinJob job, Callback callback) {
-        String url = getUrl(resume);
+        String url = getUrl(resume.replace("{job_uuid}", job.getUuid()));
         RequestBody requestBody = getRequestBody(job);
         doRequestAync(url, requestBody, Http.PUT, new ResumeJobCallback());
     }
@@ -93,8 +97,7 @@ public class SimpleKylinClient implements KylinClient {
     public KylinJob getJob(KylinJob job, Callback callback) {
         String url = getUrl(String.format("%s/%s", jobs, job.getUuid()));
         String requestSync =  doRequestSync(url, null, Http.GET, (okhttp3.Callback) null);
-        KylinJob kylinJob = JSON.parseObject(requestSync, KylinJob.class);
-        return kylinJob;
+        return JSON.parseObject(requestSync, KylinJob.class);
     }
 
     private String getUrl(String detail){

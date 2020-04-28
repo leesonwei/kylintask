@@ -1,5 +1,6 @@
-package com.delta.report.kylintask.entity;
+package com.delta.report.kylintask.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.extern.slf4j.Slf4j;
@@ -12,5 +13,6 @@ public class KylinInfo {
     private String host;
     private Integer port;
     private String username;
+    @JsonIgnore
     private String password;
 }

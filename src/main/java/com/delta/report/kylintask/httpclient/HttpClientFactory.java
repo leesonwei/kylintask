@@ -1,16 +1,12 @@
 package com.delta.report.kylintask.httpclient;
 
 
-import ch.qos.logback.core.net.server.Client;
-import com.delta.report.kylintask.entity.KylinInfo;
-import okhttp3.Headers;
+import com.delta.report.kylintask.dto.KylinInfo;
 import okhttp3.OkHttpClient;
 import org.springframework.stereotype.Component;
 
-import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
 @Component

@@ -14,4 +14,6 @@ public class KylinJob {
     private String relatedSegment;
     private String relatedSegmene;
     private List<Step> steps;
+    private boolean isResume;
+    private Integer resumeTimes;
 }

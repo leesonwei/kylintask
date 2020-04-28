@@ -1,6 +1,6 @@
 #FileLock
-#Mon Apr 27 22:20:36 CST 2020
-hostName=ANYWHERE
-id=171bc02b8d99ee356e7c1ccaabdc4a78cd00299abe0
+#Tue Apr 28 15:30:25 CST 2020
+server=192.168.172.1\:63739
+hostName=cndg2itnb013.delta.corp
 method=file
-server=172.29.240.1\:58007
+id=171bfb1ae1bde5ea3415cd7b92189e9e0654e7e4e12

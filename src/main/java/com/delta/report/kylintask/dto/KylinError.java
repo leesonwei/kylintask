@@ -1,4 +1,4 @@
-package com.delta.report.kylintask.entity;
+package com.delta.report.kylintask.dto;
 
 import lombok.Data;
 import lombok.ToString;

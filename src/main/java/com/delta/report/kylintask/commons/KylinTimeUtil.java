@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.TimeZone;
 
 /**
- * kylin的時間轉換
+ * kylin的時間轉換為utc
  */
 @Slf4j
 public class KylinTimeUtil {
@@ -20,7 +20,7 @@ public class KylinTimeUtil {
         sdf.setTimeZone(TimeZone.getTimeZone("GMT+8"));
         try {
             Date date = sdf.parse(formatTimeString);
-            //+8小時才符合kylin的時間,Kylin默認TimeZone是GMT
+            //+8小時才符合kylin的時間,Kylin代碼是uct,顯示是GMT8
             return String.valueOf(date.getTime() + 8 * 60 *60 * 1000);
         } catch (ParseException e) {
             log.error("", e);
